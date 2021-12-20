@@ -691,6 +691,7 @@ textarea.input {
     transform: translateX(0%);
     width: 100%;
   }
+  
   .main-nav {
     margin: 0px;
     float: none;
@@ -744,6 +745,21 @@ textarea.input {
   -webkit-transform: skewX(-45deg) translateX(-100%);
   -ms-transform: skewX(-45deg) translateX(-100%);
   transform: skewX(-45deg) translateX(-100%);
+}
+.shop-img{
+  overflow: hidden;
+  height: 240px;
+}
+.shop-img img {
+  width: 100%;
+  height: auto;
+}
+@supports(object-fit: cover){
+  .shop-img img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
 }
 
 .shop .shop-img {
